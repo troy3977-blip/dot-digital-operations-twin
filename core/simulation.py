@@ -14,8 +14,8 @@ def _effective_capacity(model: OperatingModelConfig) -> float:
     - digital_penetration offloads some load
     """
     base = 1.0  # normalized capacity
-    staff_factor = 0.7 * model.staffing_level
-    vendor_factor = 0.3 * model.vendor_support
+    staff_factor = 0.6 * model.staffing_level
+    vendor_factor = 0.4 * model.vendor_support
     digital_factor = 0.2 * model.digital_penetration  # reduces strain
 
     return base + staff_factor + vendor_factor + digital_factor
@@ -57,7 +57,7 @@ def _map_to_kpis(
     staffing_cost = 60.0 * model.staffing_level
     vendor_cost = 25.0 * model.vendor_support
     digital_cost = 15.0 * model.digital_penetration
-    shock_cost = 10.0 * shock_intensity  # overtime, surge staffing, etc.
+    shock_cost = 25.0 * shock_intensity  # overtime, surge staffing, etc.
 
     total_cost = base_cost + staffing_cost + vendor_cost + digital_cost + shock_cost
 
