@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: python-latest
 
     steps:
       - name: Checkout
@@ -30,6 +30,6 @@ jobs:
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
-          app-name: dot-strategy-dashboard           # <-- your Web App name
+          app-name: dot-webapp           # <-- your Web App name
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
           package: release.zip
