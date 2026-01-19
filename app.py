@@ -1,5 +1,7 @@
 import streamlit as st
+
 from ui import policy_explorer, scenario_matrix, frontier_view
+
 
 st.set_page_config(
     page_title="DOT – Digital Operations Twin",
