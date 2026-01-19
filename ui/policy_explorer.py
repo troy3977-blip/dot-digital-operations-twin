@@ -1,10 +1,14 @@
 import streamlit as st
+
+
+
 import plotly.graph_objects as go
 from core.simulation import run_single_scenario
 from core.operating_models import get_default_operating_models, OperatingModelType
 
 def render():
     st.subheader("Policy Explorer")
+    st.info("Policy Explorer view is not yet implemented.")
 
     models = get_default_operating_models()
     model_choice = st.selectbox(
