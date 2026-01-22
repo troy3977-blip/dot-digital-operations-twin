@@ -15,7 +15,6 @@ These metrics expose non-linear trade-offs between labor allocation, digital pen
 
 Optimization Layer
 To support prescriptive decision making, the system includes an optimization layer that searches the workforce configuration space to identify optimal or non-dominated policies under user-defined objectives. Three optimization modes are implemented:
-
     Minimize Cost Subject to Service Constraint
         Find the cheapest configuration that achieves or exceeds a target service level under a specified demand shock.
     Maximize Service Subject to Cost Constraint
