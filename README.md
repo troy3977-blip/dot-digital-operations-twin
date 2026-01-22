@@ -1,3 +1,2 @@
-# dot-digital-operations-twin
-
-A digital operations twin for strategic decision-making.
+#DOT ReadME
+DOT is a digital operations twin designed for COO-level decision-making. It models how demand shocks propagate through operations over a 1–3 year horizon and quantifies trade-offs across cost, access, and resilience. DOT combines simulation, optimization, and interactive exploration so operating models can be tested virtually before real investments are made. This enables executives to make capacity and capital decisions with a clearer understanding of risk, ROI, and failure points.
