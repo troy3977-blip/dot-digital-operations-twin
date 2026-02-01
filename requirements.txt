@@ -1,5 +1,9 @@
-streamlit
+streamlit>=1.31
 pandas
 numpy
+scipy
 plotly
+python-dotenv
 pydantic
+azure-identity
+azure-keyvault-secrets
