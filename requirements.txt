@@ -7,3 +7,5 @@ python-dotenv
 pydantic
 azure-identity
 azure-keyvault-secrets
+pyodbc
+sqlalchemy
