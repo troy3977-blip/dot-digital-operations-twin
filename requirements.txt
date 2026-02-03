@@ -5,7 +5,7 @@ scipy
 plotly
 python-dotenv
 pydantic
-azure-identity
 azure-keyvault-secrets
-pyodbc
-sqlalchemy
+sqlalchemy>=2.0
+pyodbc>=5.0
+azure-identity>=1.15
